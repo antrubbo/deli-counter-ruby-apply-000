@@ -5,6 +5,7 @@ def line(array)
   array.map.with_index(1) {|name, index| katz_deli_line << "#{index}. #{name}"}
   katz_deli_line == [] ? (puts "The line is currently empty.") : (puts "The line is currently: #{katz_deli_line.join(" ")}")
 end
+
 #   if katz_deli_line == []
 #     puts "The line is currently empty."
 #   else
@@ -16,6 +17,15 @@ def take_a_number(array, name)
   array << name
   puts "Welcome, #{name}. You are number #{array.length} in line."
 end
+
+# number = 0
+
+# def take_a_number(array)
+#   number += 1 
+#   array << number
+#   puts "Welcome, you are number #{number} in line."
+# end
+
 
 def now_serving(array)
   if array == []
